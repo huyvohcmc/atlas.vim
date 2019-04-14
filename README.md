@@ -1,6 +1,8 @@
 # atlas.vim
 Probably the purest black and white vim colorscheme you can find on the internet.
 
+![screenshot](./screenshots/preview.png)
+
 ### Installation
 
 ```vim
