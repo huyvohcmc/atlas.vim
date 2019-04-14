@@ -146,14 +146,14 @@ hi NERDTreeOpenable guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE c
 hi NERDTreeClosable guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi pugJavascriptOutputChar guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SignColumn guibg=#282828 guifg=NONE
-hi GitGutterAdd guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi GitGutterChange guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi GitGutterDelete guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi GitGutterChangeDelete guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi GitGutterAdd guifg=#5af78d ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi GitGutterChange guifg=#ffc24b ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi GitGutterDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi GitGutterChangeDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SignifySignAdd guifg=#5af78d ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SignifySignChange guifg=#ffc24b ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SignifySignDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi GitGutterChangeDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi SignifySignChangeDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi javaScriptOpSymbols guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi javaScriptParens guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi javaScriptDocTags guifg=#eeeeee ctermfg=242 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
