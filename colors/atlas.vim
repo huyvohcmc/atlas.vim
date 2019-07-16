@@ -5,6 +5,19 @@ if exists("syntax_on")
 endif
 let g:colors_name="atlas"
 
+
+let Italic = ""
+if exists('g:atlas_italic')
+  let Italic = "italic"
+endif
+let g:atlas_italic = get(g:, 'atlas_italic', 0)
+
+let Bold = ""
+if exists('g:atlas_bold')
+  let Bold = "bold"
+endif
+
+let g:atlas_bold = get(g:, 'atlas_bold', 0)
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
 hi CursorColumn guifg=NONE ctermfg=NONE guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
 hi CursorLine guifg=NONE ctermfg=NONE guibg=#323232 ctermbg=236 gui=NONE cterm=NONE
@@ -18,32 +31,33 @@ hi ErrorMsg guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=reverse cterm=
 hi VertSplit guifg=#282828 ctermfg=235 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi Folded guifg=#666666 ctermfg=242 guibg=#1d1d1d ctermbg=234 gui=NONE cterm=NONE
 hi FoldColumn guifg=#666666 ctermfg=242 guibg=#1d1d1d ctermbg=234 gui=NONE cterm=NONE
+hi SignColumn guifg=#999999 ctermfg=246 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi IncSearch guifg=#282828 ctermfg=235 guibg=#ffffff ctermbg=15 gui=NONE cterm=NONE
 hi LineNr guifg=#444444 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi MatchParen guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=bold cterm=bold
+hi MatchParen guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi NonText guifg=#444444 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Normal guifg=#eeeeee ctermfg=255 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
 hi PMenu guifg=#282828 ctermfg=235 guibg=#eeeeee ctermbg=81 gui=NONE cterm=NONE
-hi PMenuSel guifg=#282828 ctermfg=235 guibg=#eeeeee ctermbg=185 gui=NONE cterm=NONE
+hi PMenuSel guifg=#eeeeee ctermfg=235 guibg=#666666 ctermbg=185 gui=NONE cterm=NONE
 hi PmenuSbar guifg=#eeeeee ctermfg=180 guibg=#eeeeee ctermbg=180 gui=NONE cterm=NONE
 hi PmenuThumb guifg=#eeeeee ctermfg=215 guibg=#eeeeee ctermbg=215 gui=NONE cterm=NONE
 hi Question guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Search guifg=#ffffff ctermfg=15 guibg=NONE ctermbg=NONE gui=underline,bold cterm=underline,bold
+hi Search guifg=#ffffff ctermfg=15 guibg=NONE ctermbg=NONE gui=underline,Bold cterm=underline,Bold
 hi SpecialKey guifg=#444444 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellBad guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellLocal guifg=#eeeeee ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellCap guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi SpellRare guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi StatusLine guifg=#1d1d1d ctermfg=234 guibg=#666666 ctermbg=242 gui=bold cterm=bold
+hi StatusLine guifg=#1d1d1d ctermfg=234 guibg=#666666 ctermbg=242 gui=Bold cterm=Bold
 hi StatusLineNC guifg=#999999 ctermfg=246 guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
 hi TabLine guifg=#999999 ctermfg=246 guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
 hi TabLineFill guifg=NONE ctermfg=NONE guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
-hi TabLineSel guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=bold cterm=bold
-hi Title guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=bold cterm=bold
+hi TabLineSel guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
+hi Title guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi Visual guifg=NONE ctermfg=NONE guibg=#040404 ctermbg=0 gui=NONE cterm=NONE
 hi VisualNOS guifg=NONE ctermfg=NONE guibg=#040404 ctermbg=0 gui=NONE cterm=NONE
 hi WarningMsg guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi WildMenu guifg=#282828 ctermfg=235 guibg=#eeeeee ctermbg=185 gui=bold cterm=bold
+hi WildMenu guifg=#282828 ctermfg=235 guibg=#eeeeee ctermbg=185 gui=Bold cterm=Bold
 hi Comment guifg=#666666 ctermfg=242 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Constant guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi String guifg=#eeeeee ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -61,8 +75,8 @@ hi PreProc guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Type guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Special guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Underlined guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=underline cterm=underline
-hi Error guifg=#f43753 ctermfg=255 guibg=#NONE ctermbg=203 gui=NONE cterm=NONE
-hi Todo guifg=#ffc24b ctermfg=203 guibg=NONE ctermbg=NONE gui=bold cterm=bold
+hi Error guifg=#f43753 ctermfg=255 guibg=NONE ctermbg=203 gui=NONE cterm=NONE
+hi Todo guifg=#ffc24b ctermfg=203 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi cssVendor guifg=#eeeeee ctermfg=142 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi cssTagName guifg=#eeeeee ctermfg=142 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi cssAttrComma guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -117,9 +131,9 @@ hi jsonBoolean guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi jsonKeywordMatch guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi jsonQuote guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi jsonNoise guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi markdownH1 guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=bold cterm=bold
-hi markdownHeadingRule guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=bold cterm=bold
-hi markdownHeadingDelimiter guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=bold cterm=bold
+hi markdownH1 guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
+hi markdownHeadingRule guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
+hi markdownHeadingDelimiter guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi markdownListMarker guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi markdownBlockquote guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi markdownRule guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -145,15 +159,10 @@ hi NERDTreeCWD guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=N
 hi NERDTreeOpenable guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi NERDTreeClosable guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi pugJavascriptOutputChar guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SignColumn guibg=#282828 guifg=NONE
 hi GitGutterAdd guifg=#5af78d ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi GitGutterChange guifg=#ffc24b ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi GitGutterDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi GitGutterChangeDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SignifySignAdd guifg=#5af78d ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SignifySignChange guifg=#ffc24b ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SignifySignDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi SignifySignChangeDelete guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi GitGutterChangeDelete guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi javaScriptOpSymbols guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi javaScriptParens guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi javaScriptDocTags guifg=#eeeeee ctermfg=242 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -182,7 +191,7 @@ hi jsExportDefault guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE ct
 hi jsExportDefaultGroup guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi jsFrom guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi plug2 guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi plugH2 guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=bold cterm=bold
+hi plugH2 guifg=#eeeeee ctermfg=81 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi plugBracket guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi plugNumber guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi plugDash guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -193,6 +202,11 @@ hi plugUpdate guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=N
 hi plugEdge guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi plugSha guifg=#eeeeee ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi plugNotLoaded guifg=#eeeeee ctermfg=237 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi link SignifySignAdd GitGutterAdd
+hi link SignifySignDelete GitGutterDelete
+hi link SignifySignDeleteFirstLine SignifySignDelete
+hi link SignifySignChange GitGutterChange
+hi link SignifySignChangeDelete GitGutterChangeDelete
 hi stylusVariable guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi stylusClass guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi stylusClassChar guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
