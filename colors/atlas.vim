@@ -54,8 +54,8 @@ hi TabLine guifg=#999999 ctermfg=246 guibg=#444444 ctermbg=238 gui=NONE cterm=NO
 hi TabLineFill guifg=NONE ctermfg=NONE guibg=#444444 ctermbg=238 gui=NONE cterm=NONE
 hi TabLineSel guifg=#eeeeee ctermfg=185 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi Title guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
-hi Visual guifg=NONE ctermfg=NONE guibg=#040404 ctermbg=0 gui=NONE cterm=NONE
-hi VisualNOS guifg=NONE ctermfg=NONE guibg=#040404 ctermbg=0 gui=NONE cterm=NONE
+hi Visual guifg=NONE ctermfg=NONE guibg=#444444 ctermbg=0 gui=NONE cterm=NONE
+hi VisualNOS guifg=NONE ctermfg=NONE guibg=#444444 ctermbg=0 gui=NONE cterm=NONE
 hi WarningMsg guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi WildMenu guifg=#282828 ctermfg=235 guibg=#eeeeee ctermbg=185 gui=Bold cterm=Bold
 hi Comment guifg=#666666 ctermfg=242 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
