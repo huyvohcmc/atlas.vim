@@ -7,8 +7,9 @@ Probably the purest black and white vim colorscheme you can find on the internet
 
 ```vim
 Plug 'huyvohcmc/atlas.vim'
-:PlugInstall
 ```
+
+Then `:PlugInstall`.
 
 ### Use
 
