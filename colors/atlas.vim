@@ -31,16 +31,16 @@ hi DiffChange guifg=NONE ctermfg=NONE guibg=#eeeeee ctermbg=239 gui=NONE cterm=N
 hi DiffDelete guifg=#eeeeee ctermfg=203 guibg=#eeeeee ctermbg=237 gui=NONE cterm=NONE
 hi DiffText guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
 hi ErrorMsg guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=reverse cterm=reverse
-hi VertSplit guifg=#282828 ctermfg=235 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
+hi VertSplit guifg=#242424 ctermfg=235 guibg=#242424 ctermbg=235 gui=NONE cterm=NONE
 hi Folded guifg=#666666 ctermfg=242 guibg=#1d1d1d ctermbg=234 gui=NONE cterm=NONE
 hi FoldColumn guifg=#666666 ctermfg=242 guibg=#1d1d1d ctermbg=234 gui=NONE cterm=NONE
-hi SignColumn guifg=#999999 ctermfg=246 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
-hi IncSearch guifg=#282828 ctermfg=235 guibg=#ffffff ctermbg=15 gui=NONE cterm=NONE
+hi SignColumn guifg=#999999 ctermfg=246 guibg=#242424 ctermbg=235 gui=NONE cterm=NONE
+hi IncSearch guifg=#242424 ctermfg=235 guibg=#ffffff ctermbg=15 gui=NONE cterm=NONE
 hi LineNr guifg=#666666 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi NonText guifg=#666666 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Normal guifg=#eeeeee ctermfg=255 guibg=#282828 ctermbg=235 gui=NONE cterm=NONE
-hi PMenu guifg=#282828 ctermfg=235 guibg=#eeeeee ctermbg=81 gui=NONE cterm=NONE
+hi Normal guifg=#eeeeee ctermfg=255 guibg=#242424 ctermbg=235 gui=NONE cterm=NONE
+hi PMenu guifg=#242424 ctermfg=235 guibg=#eeeeee ctermbg=81 gui=NONE cterm=NONE
 hi PMenuSel guifg=#eeeeee ctermfg=235 guibg=#666666 ctermbg=185 gui=NONE cterm=NONE
 hi PmenuSbar guifg=#eeeeee ctermfg=180 guibg=#eeeeee ctermbg=180 gui=NONE cterm=NONE
 hi PmenuThumb guifg=#eeeeee ctermfg=215 guibg=#eeeeee ctermbg=215 gui=NONE cterm=NONE
@@ -60,7 +60,7 @@ hi Title guifg=#eeeeee ctermfg=153 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi Visual guifg=NONE ctermfg=NONE guibg=#666666 ctermbg=0 gui=NONE cterm=NONE
 hi VisualNOS guifg=NONE ctermfg=NONE guibg=#666666 ctermbg=0 gui=NONE cterm=NONE
 hi WarningMsg guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi WildMenu guifg=#282828 ctermfg=235 guibg=#eeeeee ctermbg=185 gui=Bold cterm=Bold
+hi WildMenu guifg=#242424 ctermfg=235 guibg=#eeeeee ctermbg=185 gui=Bold cterm=Bold
 hi Comment guifg=#666666 ctermfg=242 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Constant guifg=#eeeeee ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi String guifg=#eeeeee ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -237,9 +237,9 @@ hi yamlFlowString guifg=#eeeeee ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cte
 hi yamlFlowStringDelimiter guifg=#eeeeee ctermfg=255 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi yamlKeyValueDelimiter guifg=#eeeeee ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 
-let g:terminal_color_foreground = "#282828"
+let g:terminal_color_foreground = "#242424"
 let g:terminal_color_background = "#eeeeee"
-let g:terminal_color_0 = "#282828"
+let g:terminal_color_0 = "#242424"
 let g:terminal_color_1 = "#eeeeee"
 let g:terminal_color_2 = "#eeeeee"
 let g:terminal_color_3 = "#eeeeee"
