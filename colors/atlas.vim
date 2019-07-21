@@ -3,6 +3,9 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
+if !exists("termguicolors")
+  set termguicolors
+endif
 let g:colors_name="atlas"
 
 
