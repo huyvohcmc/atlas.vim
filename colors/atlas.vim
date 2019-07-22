@@ -40,7 +40,7 @@ hi LineNr guifg=#666666 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi NonText guifg=#666666 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Normal guifg=#e9e9e9 ctermfg=255 guibg=#242424 ctermbg=235 gui=NONE cterm=NONE
-hi PMenu guifg=#242424 ctermfg=235 guibg=#e9e9e9 ctermbg=81 gui=NONE cterm=NONE
+hi PMenu guifg=#242424 ctermfg=235 guibg=#d0d0d0 ctermbg=81 gui=NONE cterm=NONE
 hi PMenuSel guifg=#e9e9e9 ctermfg=235 guibg=#666666 ctermbg=185 gui=NONE cterm=NONE
 hi PmenuSbar guifg=#e9e9e9 ctermfg=180 guibg=#e9e9e9 ctermbg=180 gui=NONE cterm=NONE
 hi PmenuThumb guifg=#e9e9e9 ctermfg=215 guibg=#e9e9e9 ctermbg=215 gui=NONE cterm=NONE
