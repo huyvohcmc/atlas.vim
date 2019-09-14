@@ -1,8 +1,6 @@
-# atlas.vim
+![heading](./screenshots/heading.jpg)
 
-Probably the purest black and white vim colorscheme you can find on the internet.
-
-![screenshot](./screenshots/preview.png)
+> "What is man? He's just a collection of chemicals with delusions of grandeur."
 
 ### Installation
 
@@ -12,7 +10,7 @@ Plug 'huyvohcmc/atlas.vim'
 
 Then `:PlugInstall`.
 
-### Use
+### Usage
 
 ```vim
 colorscheme atlas
@@ -23,6 +21,10 @@ colorscheme atlas
 ```vim
 let g:lightline.colorscheme = 'atlas'
 ```
+
+### Screenshots or it didn't happen
+
+![screenshot](./screenshots/preview.png)
 
 ### Thanks
 
